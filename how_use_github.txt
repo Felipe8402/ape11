@@ -15,3 +15,19 @@ ssh-keygen
 	
 git clone [chave ssh] [nome da pasta a ser criada]
 
+    # agora está conectado de boas no repositório, só dar um cd e abrir a pasta pelo Bash
+	
+	# entao os adds e commits podem ser feitos normalmente, porem, eles ficaram localmente
+	  e para enviar ao repositorio em nuvem, é necessário usar os comandos abaixo
+	  
+git push origin [nome da branch]
+
+    # agora, se eu quero usar o mesmo repositorio online, em mais de uma pasta, ambiente
+	  ou máquina, eu dou um git clone do mesmo repositorio e uso o push normalmente
+	  mas quando voltar para outra máquina, e querer continuar de onde parou, é necessário
+	  usar outro comando para baixar os arquivos da nuvem e mandar para a segunda máquina 
+	  ou pasta. Deu pra entender? suahsuahs vamos nessa Felipe, tu pode melhorar nessa digitação suahasuh
+	  
+git pull origin [nome da branch] [geralmente master]
+
+
