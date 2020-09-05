@@ -1,0 +1,158 @@
+Como configurar o git
+
+## Abrir o terminal
+
+1. Configurar seu nome
+
+config --global user.name "nome"
+
+2. Configurar seu email
+
+config --global user.email "email@email"
+
+
+## Git para controle de versão com 1 só estação, para um unico desenvolvedor
+
+Criar um repositório para controle das versões
+
+abrir a pasta pelo git bash
+
+comando para criar pasta = git init (já estando dentro da pasta)
+
+## Adicionar arquivos no Git
+
+GIT ADD [nome do arquivo com extensao]
+
+GIT ADD .txt [todos os arquivos da extensao]
+
+GIT ADD . [todos os arquivos]
+
+## Depois de adicionar o arquivo na stage in area, é preciso enviar
+   o arquivo para o repositório final, usando o GIT COMMIT
+   (FAMOSO COMMITAR)
+   
+git commit -m "Nome do commit" 
+
+## Caso não queira que um arquivo seja monitorado pelo git,
+   é possível ignorá-lo no git
+   
+criar arquivo .gitignore dentro da pasta local
+colocar dentro do .gitignore, o próprio .gitignore
+e outros arquivos ou extensoes que tem de ser ignoradas pelo git
+
+## Para consultar todas as alteracoes realizadas em um arquivo,
+   mas que ainda nao foram adicionados ao ao stage in area,
+   use os comandos abaixo
+
+git diff 
+
+## Para visualizar as alteracoes feitas em arquivos,
+   depois de adicionar os arquivos na stage area,
+   use o comando
+
+git diff -- staged
+
+## Para olhar todas as atualizacoes, apos ter feito o commit
+   use o comando
+   
+git log
+
+## Se achar que o git log é muito vago, é possivel usar alguns
+   apetrechos ao git log
+   
+git log -p 
+
+   mostra tudo o que foi feito nos arquivos, fazendo uma juncao
+   do git log com o git diff
+   
+## Porém , o log -p é muito extenso, e tem paginacao, usando enter
+   para mostrar os resultados abaixo. Entao se voce quiser visualizar
+   uma quantidade especifica de commits, é possivel usar o comando 
+   git log -p com um [-n] para colocar a quantidade de commit a serem
+   consultados
+   
+git log -p -[n]
+
+
+## Masss, ainda assim, é bem complicado olhar todas essas linhas 
+   que nao foram feitas para serem lidas e gerar grandes relatorios
+   Por isso, o git fornece uma interface grafica para consultas as alteracoes
+   use o comando abaixo para abrir essa interface
+   
+gitk
+
+## Para visualizar o nome dos ultimos commits, usar o comando abaixo
+
+git log --pretty=oneline
+
+## Caso queria arrumar um commit, é possível
+   Após alterar o arquivo e consertar os erros
+   use o comando abaixo para substituir o arquivo
+   no ultimo commit
+   
+git commit --ammend -m "[novo nome para o meu commit]"
+
+## Como tirar um arquivo já adicionado, para ele nao entrar no commit?
+
+git status [para visualizar os arquivos adicionados]
+
+git reset head [nome do arquivo]
+
+OU
+
+git restore --staged new.txt
+
+## Dá para voltar um arquivo para a versao do ultimo commit, usando o comando
+
+git checkout -- [nome do arquivo] 
+
+
+
+## Usando tags
+
+As tags são etiquetas, que podem ser usadas como atalhos [PONTEIROS]
+    # comando para consultar todas as tags criadas
+
+git tag
+
+    # comando para criar uma tag 
+	
+git tag -a [v1.0] -m "Version 1.0"
+
+    # comando para voltar o sistema pra tal tag
+	
+git checkout [tag]
+
+    # comando para deletar tag
+   
+   
+ 
+## Usando branchs
+
+Branchs são os ambientes de trabalho. É possível ter um branch para a versao
+em producao, outro para versao de testes, ou ainda, como exemplo, um branch
+para versao de novas ideias. A vantagem do branch, é que o que voce altera em um
+ambiente, não é alterado em outro, desta forma, é possivel manter dois ambientes
+usando os mesmo arquivos
+
+    # comando para criar um branche
+	
+git branch [nome do branch]
+
+    # comando para entrar dentro do branch
+	
+git checkout [nome do branch]
+
+    # comando para criar um branch, e já trocar para ele
+	
+git checkout -b [nome do branch]
+
+    # comando para mesclar dois branchs
+	  [voce precisa estar no ambiente que vai receber as informacoes]
+
+git merge [nome do branch]
+
+    # comando para deletar um branch
+
+git branch -d [nome do branch]
+   

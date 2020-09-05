@@ -1,0 +1,17 @@
+## Como utilizar o Git, salvando os arquivos na nuvem
+   com o Git Hub
+   
+
+# Gerar uma chave SSH no Git Bash, para vincular sua máquina com
+  a conta no GitHub (pressupondo que já tenha uma conta né, pf)
+  
+    # comando para gerar a chave ssh
+	
+ssh-keygen
+
+    # colar a chave no seu perfil do GitHub
+	
+	# criar um repositório no GitHub e copiar a chave SSH do repositório
+	
+git clone [chave ssh] [nome da pasta a ser criada]
+
