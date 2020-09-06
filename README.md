@@ -1,7 +1,7 @@
 # Atividade Projeto Estruturado [11]
 Atividade solicitada pelo professor Carlos, com o fim de pesquisar o que é Git e como utilizá-lo na prática, através do GitHub. Abaixo as perguntas elencadas pelo professor.
 
-**Felipe Gabriel Rodrigues** *| www.ofelipegabrieu.com | felipegabrielrodrigues@gmail.com*
+**Felipe Gabriel Rodrigues** *| 09012475 | www.ofelipegabrieu.com | felipegabrielrodrigues@gmail.com*
 
 ### 1. O que é o Git?
 
@@ -52,7 +52,7 @@ Aplicação utilizada por empresa de grande e médio porte, possui seu foco em g
 
 
 *[Fontes]*
-atlassian.com/br/git/tutorials
-pt.wikipedia.org/wiki/Mercurial
-pt.wikiversity.org/wiki/Subversion_-_SVN
-en.wikipedia.org/wiki/Rational_ClearCase
+https://atlassian.com/br/git/tutorials
+https://pt.wikipedia.org/wiki/Mercurial
+https://pt.wikiversity.org/wiki/Subversion_-_SVN
+https://en.wikipedia.org/wiki/Rational_ClearCase
