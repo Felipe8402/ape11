@@ -19,40 +19,40 @@ O Git é um projeto open-source, por isso, é gratuito para todos, permitindo o 
 
 ### 4. Quais as vantagens do Git?
 
-**[Free]**
+**[Free]**  
 Conforme citado na pergunta 3, o Git é gratuito, e com isso, já se diferencia dos demais softwares que cobram mensalidades ou licenças para adquirí-los.
 
-**[Segurança]**
+**[Segurança]**  
 Criado e mantido por uma equipe competente (possui até mesmo pessoas que participaram do kernel do Linux), o Git salva históricos e logs de ações no código-fonte, utilizando uma hash de criptografia chamada SHA1, que protege seus dados de ataques, exigindo uma chave para desbloquear as informações, diferente de outros softwares que deixam livre o histórico de alterações. Além disso, o Git também salva o log de todas as ações, contendo usuário e data que realizou a mesma.
 
-**[Desempenho]**
+**[Desempenho]**  
 Claro, de nada adianta ter segurança, se o desempenho deixa a desejar, e isso não acontece com o Git. Ele possui uma otimização incomum nos seus concorrentes, pois ao invés de trabalhar com os arquivos, se baseando nas ramificações (pastas e nomes de arquivos), ele trabalha com o conteúdo do arquivo. Desta forma, ele foca somente no que é alterado no nome do arquivo, e reconhece se um arquivo teve seu nome ou localização alterados, comparando o conteúdo novo com o já salvo em versões anteriores.
 
 ### 5. Qual a importância da utilização do controle de versionamento no desenvolvimento de um software?
 
 Existem vários fatores que *forçam* a utlização de um controle de versionamento no desenvolvimento de uma aplicação, isto porque suas vantagens trazem segurança, flexibilidade, trabalho em equipe, administração de mudanças e atualizações, reparação de bugs e outros benefícios. Citarei abaixo, dois dos benefícios elencados, que para mim, são grandes diferençais quando falamos de desenvolvimento de software em corporações.
 
-**[Trabalho em equipe]**
+**[Trabalho em equipe]**  
 Quando imagino o desenvolvimento de uma aplicação, consigo ver alguns *grupos com tipos* de desenvolvedores. Existem os freelancers que trabalham sozinhos, ou os dois colegas que se conheceram e querem bancar uma nova ideia, e também, aquele grande grupo de pessoas que trabalha desenvolvendo para uma empresa. Em alguns casos, cada um está em um local diferente, seja uma sala diferente, cidade ou país. Para conectar essas pessoas, o versionamento permite que seja verificado quem realizou qual alteração em qual momento, também traz a função de trabalho remoto, em que uma equipe pode trabalhar resolvendo um bug, e outra desenvolvendo uma nova interface, tudo dentro do mesmo projeto, mas cada um, em um ambiente de desenvolvimento diferente, trabalhando colaborativamente.
 
-**[Administração de mudanças e atualizações]**
+**[Administração de mudanças e atualizações]**  
 Em algumas carreiras, é comum que um profissional passe pela faculdade e não necessite de mais estudos ou especializações e esse, com certeza, não é o caso de um desenvolvedor de software. Na Tecnologia da Informação, tudo muda, nada está na versão final, e sempre existe uma forma de melhorar ou um bug para arrumar **(rsrs)**. Então o versionamento permite que um código-fonte possa ser gerido como merece, realizando atualizações periódicas, permitindo desfazer essas atualizações caso necessário, e, mantendo um código legível e documentado por anos, para que assim, a aplicação continue viva, sendo que, independente de quem a desenvolva, esta pessoa possa entender o histórico do código, e dê continuidade no mesmo.
 
 
 ###  6. Cite três ferramentas de controle de versão
 
-**Mercurial** *| software livre | desenvolvido por Matt Mackall*
+**Mercurial** *| software livre | desenvolvido por Matt Mackall*  
 É uma ferramenta utilizada por corporações gigantes como o Google e o Facebook, para administração de software com grandes equipes. Foca na alta performance, escabilidade, *descentralização* e operações avanádas com merges e branchs.
 
-**Apache Subversion** *| software livre | desenvolvido pela Apache*
+**Apache Subversion** *| software livre | desenvolvido pela Apache*  
 Ferramenta desenvolvida e mantida pela Apache, tem como foco, o trabalho colaborativo de usuários em rede. Permite a reserversão e versões e históricos de alterações. Sua diferença com outros produtos, é que pode ser usado para qualquer conjunto de arquivo, sendo eles código-fonte, imagens, edições de fotos e vídeos, e outros.
 
-**Rational ClearCase** *| software licenciado | criado pela Atria e mantido pela IBM*
+**Rational ClearCase** *| software licenciado | criado pela Atria e mantido pela IBM*  
 Aplicação utilizada por empresa de grande e médio porte, possui seu foco em gerenciamento de grande número de usuários e projetos, suportante grandes pastas, repositórios e arquivos binários. Além disso, fornece suporte à ramificação, rotulagem e controle de versão dos diretórios.
 
 
-*[Fontes]*
-https://atlassian.com/br/git/tutorials
-https://pt.wikipedia.org/wiki/Mercurial
-https://pt.wikiversity.org/wiki/Subversion_-_SVN
+*[Fontes]*  
+https://atlassian.com/br/git/tutorials  
+https://pt.wikipedia.org/wiki/Mercurial  
+https://pt.wikiversity.org/wiki/Subversion_-_SVN  
 https://en.wikipedia.org/wiki/Rational_ClearCase
