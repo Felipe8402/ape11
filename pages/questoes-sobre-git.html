@@ -8,7 +8,7 @@
       <meta name="description" content="">
       <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
       <meta name="generator" content="Jekyll v4.1.1">
-      <title>Blog Template · Bootstrap</title>
+      <title>APE11 - Questões sobre Git</title>
       <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
       <!-- Bootstrap core CSS -->
       <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
                   <a class="text-muted" href="https://github.com/Felipe8402/ape11" target="_blank">Projeto no GitHub</a>
                </div>
                <div class="col-8 text-center">
-                  <a class="blog-header-logo text-dark" href="#">Atividade Projeto Estruturado</a>
+                  <a class="blog-header-logo text-dark" href="../index.html">Atividade Projeto Estruturado</a>
                </div>
                <div class="col-2 d-flex justify-content-end align-items-center">
                   <img src="../img/icon-logo.png" width="50" height="45"> 
@@ -109,142 +109,103 @@
                <div class="blog-post">
                   <h2 class="blog-post-title">Questões sobre o Git</h2>
                   <strong class="d-inline-block mb-5 text-success">Atividade 1</strong>
-				  
-				  
-				  
-				  <!-- Bloco de perguntas -->
-				  <div class="text-justify mb-5">
-				  
-                  <h5 class="mb-3"> 
-				  Para que serve o commit e qual a melhor forma de utilizá-lo?
-				  </h5>
-				  
-				  <p>
-				  O commit é uma das funções mais importantes do Git, talvez a mais importante, pois funciona como um ponto final em um parágrafo
-				  que já foi revisado. Simplificando, o commit vem após o uso da função "add", que adiciona os arquivos selecionados na função em 
-				  uma área de espera. Ali, a versão do arquivo fica temporariamente salva, mas não de forma definitiva, sendo que, se você utilizar
-				  a função "add" mais uma vez para o mesmoa arquivo, ele é sobreescrito. Agora, voltando ao commit: ele serve para literalmente 
-				  salvar o arquivo em uma versão, ele realiza o versionamento local do projeto. 
-				  </p>
-				  <p>
-			      Por isso, muitos ficam em dúvida em como utilizá-lo. O que aprendi fazendo este trabalho, lendo, e assistindo os vídeos recomendados,
-				  é que o commit precisa seguir a lógica do versionamento que está sendo usado. Explico: se o versionamento utilizado é o Versionamento
-				  Semântico 2.0, o commit precisa atender um dos três requisitos da norma:
-				  </p>
-				  <p>
-				  &bullet; Adicionar uma nova função</br>
-				  &bullet; Ser um patch de correção</br>
-				  &bullet; Realizar alteração que torna as versões anteriores incompatíveis</br>
-				  </p>
-				  
-				  </div>
-				  <!-- Fecha bloco de perguntas -->
-				  
-				  
-				  
-				  <!-- Bloco de perguntas -->
-				  <div class="text-justify mb-5">
-				  
-                  <h5 class="mb-3"> 
-				  Qual a diferença entre commit e push?
-				  </h5>
-				  
-				  <p>
-				  A diferença é simples, e não necessita de cem palavras para explicar. O commit realiza a gravação dos arquivos no repositório local, 
-				  enquanto o push faz a gravação no repositório remoto, desta forma, com o push é possível verificar as alterações em qualquer estação,
-				  e no commit, a alteração não estará disponível em outros lugares.
-				  </p>
-				  
-				  </div>
-				  <!-- Fecha bloco de perguntas -->
-				  
-				  
-				  <!-- Bloco de perguntas -->
-				  <div class="text-justify mb-5">
-				  
-                  <h5 class="mb-3"> 
-				  O que é tag?
-				  </h5>
-				  
-				  <p>
-				  Tag em inglês significa etiqueta, e sua funcão é exatamente esta no Git. Ela não substituiu o nome de um commit, mas sim, o complementa.
-				  A tag permite que você adicione informações sobre um commit, ou divida todos os seus commits, em grandes grupos. Pensando em um exemplo simples,
-				  você pode usar a tag para identificar, quais commits foram feitos quando você estava com sono, e quais quando você tomou energético, assim,
-				  pode comparar seu rendimento em cada um dos casos (fui longe nessa).
-				  </p>
-				  
-				  </div>
-				  <!-- Fecha bloco de perguntas -->
-				  
-				  
-				  
-				  <!-- Bloco de perguntas -->
-				  <div class="text-justify mb-5">
-				  
-                  <h5 class="mb-3"> 
-				  O que é branch?
-				  </h5>
-				  
-				  <p>
-				  Embora branch signifique ramo, ou ramificação, em inglês, eu vejo ele mais como um "ambiente" do que como seu significado literal. 
-				  Isso porque o branch permite que com a mesma pasta de arquivos, você possa ter várias áreas de trabalho, ou ambientes, diferentes.
-				  Por exemplo um ambiente de produção e outro de testes, onde todas as alterações que você faz quando está na branch de teste, não influenciam
-				  na branch produção. Além disso, é possível copiar branchs, então, após realizar uma nova implementação na branche de testes, você pode
-				  enviar todas as alterações para a branch usada na produção. Realmente é uma função que explodiu minha mente quando a conheci, pois é
-				  super poderosa, tantos para times, quando para single devs.
-				  </p>
-				  
-				  </div>
-				  <!-- Fecha bloco de perguntas -->
-				  
-				  
-				  
-				  <!-- Bloco de perguntas -->
-				  <div class="text-justify mb-5">
-				  
-                  <h5 class="mb-3"> 
-				  Como resolver possíveis conflitos no Git?
-				  </h5>
-				  
-				  <p>
-				  Confesso que não tive problemas ao utilizar o Git por enquanto, mas pesquisando na internet, e vendo a experiência de outras pessoas,
-				  tenho certeza que vou ter alguns com o passar do tempo. Então separei dois problemas que podem acontecer, e que encontrei
-				  <a href="https://gama.academy/blog/desenvolvimento/problemas-comuns-do-git/" target="_blank">neste site</a>, as frases são citações retiradas
-				  em literal do site.
-				  </p>
-				  <blockquote cite="https://gama.academy/blog/desenvolvimento/problemas-comuns-do-git/">
-				  <p>
-				  <strong>1. Remover um arquivo do Git, sem retirá-lo da sua máquina</br></strong>
-				  Se você não tiver cuidado durante um git add, pode acabar adicionando um arquivo que não deseja. No entanto, o git rm irá removê-lo
-				  da área de armazenamento temporário e do sistema de arquivos, o que pode não ser o que você deseja. Nesse caso, remova apenas a
-				  versão da área de preparação e adicione o arquivo ao seu .gitignore para evitar cometer o mesmo erro pela segunda vez.
-				  </p>
-				  <p>
-				  <strong>1. Reverter o push de commits</br></strong>
-                  Apesar das correções demonstradas nas dicas anteriores, commits defeituosos ocasionalmente chegam ao repositório central. Ainda assim,
-				  este não é um motivo para se desesperar, pois o git oferece uma maneira fácil de reverter um ou vários commits.
-                  Caso não deseje criar commits adicionais de reversão, mas apenas aplicar as alterações necessárias à sua árvore de trabalho, 
-				  você pode usar a opção --no-commit / -n. A página de manual no man 1 git-revert lista outras opções e fornece alguns exemplos adicionais
-				  </p>
-				  </blockquote>
-				  
-				  </div>
-				  <!-- Fecha bloco de perguntas -->
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  </div>
-				  
+                  <!-- Bloco de perguntas -->
+                  <div class="text-justify mb-5">
+                     <h5 class="mb-3"> 
+                        Para que serve o commit e qual a melhor forma de utilizá-lo?
+                     </h5>
+                     <p>
+                        O commit é uma das funções mais importantes do Git, talvez a mais importante, pois funciona como um ponto final em um parágrafo
+                        que já foi revisado. Simplificando, o commit vem após o uso da função "add", que adiciona os arquivos selecionados na função em 
+                        uma área de espera. Ali, a versão do arquivo fica temporariamente salva, mas não de forma definitiva, sendo que, se você utilizar
+                        a função "add" mais uma vez para o mesmoa arquivo, ele é sobreescrito. Agora, voltando ao commit: ele serve para literalmente 
+                        salvar o arquivo em uma versão, ele realiza o versionamento local do projeto. 
+                     </p>
+                     <p>
+                        Por isso, muitos ficam em dúvida em como utilizá-lo. O que aprendi fazendo este trabalho, lendo, e assistindo os vídeos recomendados,
+                        é que o commit precisa seguir a lógica do versionamento que está sendo usado. Explico: se o versionamento utilizado é o Versionamento
+                        Semântico 2.0, o commit precisa atender um dos três requisitos da norma:
+                     </p>
+                     <p>
+                        &bullet; Adicionar uma nova função</br>
+                        &bullet; Ser um patch de correção</br>
+                        &bullet; Realizar alteração que torna as versões anteriores incompatíveis</br>
+                     </p>
+                  </div>
+                  <!-- Fecha bloco de perguntas -->
+                  <!-- Bloco de perguntas -->
+                  <div class="text-justify mb-5">
+                     <h5 class="mb-3"> 
+                        Qual a diferença entre commit e push?
+                     </h5>
+                     <p>
+                        A diferença é simples, e não necessita de cem palavras para explicar. O commit realiza a gravação dos arquivos no repositório local, 
+                        enquanto o push faz a gravação no repositório remoto, desta forma, com o push é possível verificar as alterações em qualquer estação,
+                        e no commit, a alteração não estará disponível em outros lugares.
+                     </p>
+                  </div>
+                  <!-- Fecha bloco de perguntas -->
+                  <!-- Bloco de perguntas -->
+                  <div class="text-justify mb-5">
+                     <h5 class="mb-3"> 
+                        O que é tag?
+                     </h5>
+                     <p>
+                        Tag em inglês significa etiqueta, e sua funcão é exatamente esta no Git. Ela não substituiu o nome de um commit, mas sim, o complementa.
+                        A tag permite que você adicione informações sobre um commit, ou divida todos os seus commits, em grandes grupos. Pensando em um exemplo simples,
+                        você pode usar a tag para identificar, quais commits foram feitos quando você estava com sono, e quais quando você tomou energético, assim,
+                        pode comparar seu rendimento em cada um dos casos (fui longe nessa).
+                     </p>
+                  </div>
+                  <!-- Fecha bloco de perguntas -->
+                  <!-- Bloco de perguntas -->
+                  <div class="text-justify mb-5">
+                     <h5 class="mb-3"> 
+                        O que é branch?
+                     </h5>
+                     <p>
+                        Embora branch signifique ramo, ou ramificação, em inglês, eu vejo ele mais como um "ambiente" do que como seu significado literal. 
+                        Isso porque o branch permite que com a mesma pasta de arquivos, você possa ter várias áreas de trabalho, ou ambientes, diferentes.
+                        Por exemplo um ambiente de produção e outro de testes, onde todas as alterações que você faz quando está na branch de teste, não influenciam
+                        na branch produção. Além disso, é possível copiar branchs, então, após realizar uma nova implementação na branche de testes, você pode
+                        enviar todas as alterações para a branch usada na produção. Realmente é uma função que explodiu minha mente quando a conheci, pois é
+                        super poderosa, tantos para times, quando para single devs.
+                     </p>
+                  </div>
+                  <!-- Fecha bloco de perguntas -->
+                  <!-- Bloco de perguntas -->
+                  <div class="text-justify mb-5">
+                     <h5 class="mb-3"> 
+                        Como resolver possíveis conflitos no Git?
+                     </h5>
+                     <p>
+                        Confesso que não tive problemas ao utilizar o Git por enquanto, mas pesquisando na internet, e vendo a experiência de outras pessoas,
+                        tenho certeza que vou ter alguns com o passar do tempo. Então separei dois problemas que podem acontecer, e que encontrei
+                        <a href="https://gama.academy/blog/desenvolvimento/problemas-comuns-do-git/" target="_blank">neste site</a>, as frases são citações retiradas
+                        em literal do site.
+                     </p>
+                     <blockquote cite="https://gama.academy/blog/desenvolvimento/problemas-comuns-do-git/">
+                        <p>
+                           <strong>1. Remover um arquivo do Git, sem retirá-lo da sua máquina</br></strong>
+                           Se você não tiver cuidado durante um git add, pode acabar adicionando um arquivo que não deseja. No entanto, o git rm irá removê-lo
+                           da área de armazenamento temporário e do sistema de arquivos, o que pode não ser o que você deseja. Nesse caso, remova apenas a
+                           versão da área de preparação e adicione o arquivo ao seu .gitignore para evitar cometer o mesmo erro pela segunda vez.
+                        </p>
+                        <p>
+                           <strong>1. Reverter o push de commits</br></strong>
+                           Apesar das correções demonstradas nas dicas anteriores, commits defeituosos ocasionalmente chegam ao repositório central. Ainda assim,
+                           este não é um motivo para se desesperar, pois o git oferece uma maneira fácil de reverter um ou vários commits.
+                           Caso não deseje criar commits adicionais de reversão, mas apenas aplicar as alterações necessárias à sua árvore de trabalho, 
+                           você pode usar a opção --no-commit / -n. A página de manual no man 1 git-revert lista outras opções e fornece alguns exemplos adicionais
+                        </p>
+                     </blockquote>
+                  </div>
+                  <!-- Fecha bloco de perguntas -->
                </div>
-               <!-- /.blog-post -->
             </div>
-            <!-- /.blog-main -->
+            <!-- /.blog-post -->
+         </div>
+         <!-- /.blog-main -->
          </div>
          <!-- /.row -->
          <!-- Conteudo da pagina -->
